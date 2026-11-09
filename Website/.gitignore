@@ -1,0 +1,7 @@
+node_modules/
+.build/
+__pycache__/
+release/
+*.tar.gz
+*.zip
+!dist/downloads/*.zip

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-09",
+  "environment": "Native Windows x64 host; explicitly authorized by the owner",
+  "launcher_version": "1.1.0.0",
+  "launcher_sha256": "55bd0a49bac8c68583612d4b935739b18426e6be41d8cb94782f1f1787a8cb87",
+  "target_sha256_unchanged": "928468742916dbbfd4f1aebd08fa92d8e90e9db05de9abfe12b78a7863f41bd2",
+  "observed_launches": 2,
+  "all_launchers_reported_patch_count": 24,
+  "launcher_writes_verified_by_readback": true,
+  "window_title": "CVM",
+  "window_responding_after_initialization": true,
+  "observation_seconds_after_launcher_exit": 8,
+  "exit_behavior_verified": false,
+  "native_model_inference_tested": false,
+  "native_capture_device_output_tested": false,
+  "native_network_silence_tested": false,
+  "scope": "Startup and UI responsiveness only. The later checks of the window state do not establish full pipeline or exit behavior."
+}

@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "name": "Setup includes compiled launcher and no Sandbox requirement",
+      "passed": true
+    },
+    {
+      "name": "Two-PC LAN checklist shown",
+      "passed": true
+    },
+    {
+      "name": "ONNX and engine guidance shown",
+      "passed": true
+    },
+    {
+      "name": "Table of contents has setup headings",
+      "passed": true
+    },
+    {
+      "name": "No-results search feedback",
+      "passed": true
+    },
+    {
+      "name": "Model guidance searchable",
+      "passed": true
+    },
+    {
+      "name": "Unknown chapter falls back to overview",
+      "passed": true
+    },
+    {
+      "name": "Three direct archive part links",
+      "passed": true
+    },
+    {
+      "name": "Direct extraction helper link",
+      "passed": true
+    },
+    {
+      "name": "Desktop no page overflow",
+      "passed": true
+    },
+    {
+      "name": "Mobile no page overflow",
+      "passed": true
+    },
+    {
+      "name": "Mobile five chapters",
+      "passed": true
+    },
+    {
+      "name": "Mobile chapter navigation",
+      "passed": true
+    },
+    {
+      "name": "Mobile downloads no page overflow",
+      "passed": true
+    },
+    {
+      "name": "No Discord links",
+      "passed": true
+    },
+    {
+      "name": "GitHub header link",
+      "passed": true
+    },
+    {
+      "name": "No page exceptions",
+      "passed": true
+    },
+    {
+      "name": "Download text has clean Unicode",
+      "passed": true
+    },
+    {
+      "name": "Public guide excludes internal Sandbox testing",
+      "passed": true
+    },
+    {
+      "name": "Public downloads exclude internal Sandbox testing",
+      "passed": true
+    },
+    {
+      "name": "Three direct package links remain",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

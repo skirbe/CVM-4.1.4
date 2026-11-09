@@ -1,0 +1,184 @@
+{
+  "reference": "https://www.cvmai.uk/",
+  "patches": [
+    {
+      "before": "home:\"Home\",buy:\"Buy\",hardware:",
+      "after": "home:\"Home\",buy:\"Download\",hardware:",
+      "count": 1
+    },
+    {
+      "before": "plans:\"View plans\"",
+      "after": "plans:\"Download\"",
+      "count": 1
+    },
+    {
+      "before": "ctaPlans:\"View plans\"",
+      "after": "ctaPlans:\"Download\"",
+      "count": 1
+    },
+    {
+      "before": "plans:\"Plans\",hardware:",
+      "after": "plans:\"Downloads\",hardware:",
+      "count": 1
+    },
+    {
+      "before": "F(\"buy\",",
+      "after": "F(\"downloads\",",
+      "count": 1
+    },
+    {
+      "before": "O(\"buy\",",
+      "after": "O(\"downloads\",",
+      "count": 1
+    },
+    {
+      "before": "F(\"hardware\",",
+      "after": "F(\"guides\",t.jsx(Iy,{className:\"w-4 h-4\"}),\"Guide\"),F(\"hardware\",",
+      "count": 1
+    },
+    {
+      "before": "O(\"hardware\",",
+      "after": "O(\"guides\",\"Guide\",t.jsx(Iy,{className:\"w-3.5 h-3.5\"})),O(\"hardware\",",
+      "count": 1
+    },
+    {
+      "before": "function nf(){const e=window.location.pathname;",
+      "after": "function nf(){const e=window.location.pathname;if([\"/guides\",\"/guides/\",\"/guides/index.html\"].includes(e))return \"guides\";",
+      "count": 1
+    },
+    {
+      "before": "i===\"buy\"||i===\"me\"||i===\"hardware\"",
+      "after": "i===\"guides\"||i===\"buy\"||i===\"me\"||i===\"hardware\"",
+      "count": 1
+    },
+    {
+      "before": "i===\"downloads\"&&t.jsx(TB,",
+      "after": "i===\"guides\"&&t.jsx(CVMAIGuide,{}),i===\"downloads\"&&t.jsx(TB,",
+      "count": 1
+    },
+    {
+      "before": "$=j.useCallback(Q=>{l(Q);",
+      "after": "$=j.useCallback(Q=>{Q=Q===\"buy\"?\"downloads\":Q;l(Q);",
+      "count": 1
+    },
+    {
+      "before": "window.history.pushState({},\"\",T),c(T)",
+      "after": "window.history.pushState({},\"\",T),c(T),window.dispatchEvent(new Event(\"cvmai:navigate\"))",
+      "count": 1
+    },
+    {
+      "before": "href:\"/buy\"",
+      "after": "href:\"/downloads\"",
+      "count": 2
+    },
+    {
+      "before": "buy:\"購買卡密\"",
+      "after": "buy:\"下載\"",
+      "count": 1
+    },
+    {
+      "before": "buy:\"购买卡密\"",
+      "after": "buy:\"下载\"",
+      "count": 1
+    },
+    {
+      "before": "buy:\"Купить\"",
+      "after": "buy:\"Скачать\"",
+      "count": 1
+    },
+    {
+      "before": "buy:\"Comprar\"",
+      "after": "buy:\"Baixar\"",
+      "count": 1
+    },
+    {
+      "before": "me:()=>xe(\"/api/me\")",
+      "after": "me:()=>xe(\"/api/me.json\")",
+      "count": 1
+    },
+    {
+      "before": "products:()=>xe(\"/api/products\")",
+      "after": "products:()=>xe(\"/api/products.json\")",
+      "count": 1
+    },
+    {
+      "before": "changelog:()=>xe(\"/api/changelog\")",
+      "after": "changelog:()=>xe(\"/api/changelog.json\")",
+      "count": 1
+    },
+    {
+      "before": "t.jsxs(\"button\",{onClick:d,\"aria-label\":h.login,",
+      "after": "t.jsxs(\"a\",{href:\"https://github.com/terrafirma2021/CVMAI\",target:\"_blank\",rel:\"noopener noreferrer\",\"aria-label\":\"GitHub\",",
+      "count": 1
+    },
+    {
+      "before": "children:h.login",
+      "after": "children:\"GitHub\"",
+      "count": 1
+    },
+    {
+      "before": "function B_({",
+      "after": "function CVMAIOriginalTrial({",
+      "count": 1
+    },
+    {
+      "before": "href:\"https://discord.gg/6SxKbrdq8C\",target:\"_blank\",rel:\"noreferrer\",className:Cs,children:$n[e].trial",
+      "after": "href:\"https://github.com/terrafirma2021/CVMAI/releases\",target:\"_blank\",rel:\"noreferrer\",className:Cs,children:\"Releases\"",
+      "count": 1
+    },
+    {
+      "before": "children:\"Discord\"",
+      "after": "children:\"GitHub\"",
+      "count": 1
+    },
+    {
+      "before": "https://discord.gg/6SxKbrdq8C",
+      "after": "https://github.com/terrafirma2021/CVMAI",
+      "count": 3
+    },
+    {
+      "before": "const ee=()=>{const Q=`${window.location.pathname}${window.location.search}${window.location.hash}`;window.location.href=`/api/auth/discord/start?returnTo=${encodeURIComponent(Q)}`}",
+      "after": "const ee=()=>{window.location.href=\"https://github.com/terrafirma2021/CVMAI\"}",
+      "count": 1
+    },
+    {
+      "before": "ctaTrial:\"Request a trial key\"",
+      "after": "ctaTrial:\"View on GitHub\"",
+      "count": 1
+    },
+    {
+      "before": "ctaText:\"Pick a plan and start now, or open a Discord ticket to request a trial key first.\"",
+      "after": "ctaText:\"Download the Windows release or explore the source and guides on GitHub.\"",
+      "count": 1
+    },
+    {
+      "before": "ctaTrialNote:\"Join the CVM AI Discord server and open a Support Ticket asking for a trial key; staff will help you in the ticket.\"",
+      "after": "ctaTrialNote:\"Source, documentation and releases are available in the GitHub repository.\"",
+      "count": 1
+    },
+    {
+      "before": "if([\"/guides\",\"/guides/\",\"/guides/index.html\"].includes(e))return \"guides\";",
+      "after": "if([\"/guides\",\"/guides/\",\"/guides/index.html\"].includes(e)||e===\"/tutorial\"||e.startsWith(\"/tutorial/\"))return \"guides\";",
+      "count": 1
+    },
+    {
+      "before": "const su=\"https://www.cvmai.uk\"",
+      "after": "const su=\"https://terrafirma2021.github.io/CVMAI\"",
+      "count": 1
+    },
+    {
+      "before": "iU=[\"reseller-cn.cvmai.uk\",\"localhost\",\"127.0.0.1\"]",
+      "after": "iU=[\"reseller-cn.cvmai.uk\"]",
+      "count": 1
+    },
+    {
+      "before": "function TB({",
+      "after": "function CVMAIOriginalDownloads({",
+      "count": 1
+    }
+  ],
+  "byte_identical_original_assets": 298,
+  "download_component": "downloads-component.js",
+  "account_backend": "Original service; not copied",
+  "local_application_archive_not_deployed": true
+}

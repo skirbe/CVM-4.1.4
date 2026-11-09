@@ -1,0 +1,13 @@
+{
+    "created_at": "2026-03-20T19:30:12",
+    "curve_points": 50,
+    "display_name": "2026-03-20 19:30:12 | 320x320 | r8 | s4.00 | p50",
+    "learning_rate": 0.01,
+    "logical_height": 320,
+    "logical_width": 320,
+    "schema": "qx_model_library_meta_v1",
+    "source": "trained",
+    "step_size": 4,
+    "target_radius": 8,
+    "training_epochs": 350
+}

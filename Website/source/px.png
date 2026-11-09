@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#06050d" />
+    <link rel="icon" href="/logo/logo.png" />
+    <link rel="apple-touch-icon" href="/logo/logo.png" />
+    <link rel="canonical" href="https://www.cvmai.uk/" />
+    <meta
+      name="description"
+      content="CVM AI brings AI vision support to dual-PC competitive setups, pairing target-tracking workflows with dedicated capture and control hardware."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="CVM, CVM AI, cvmai, dual-PC AI vision, target tracking support, dedicated hardware workflow, Windows"
+    />
+    <meta name="application-name" content="CVM AI" />
+    <meta name="apple-mobile-web-app-title" content="CVM AI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.cvmai.uk/" />
+    <meta property="og:title" content="CVM AI | Dual-PC AI Vision Platform" />
+    <meta
+      property="og:description"
+      content="CVM AI brings AI vision support to dual-PC competitive setups, pairing target-tracking workflows with dedicated capture and control hardware."
+    />
+    <meta property="og:image" content="https://www.cvmai.uk/logo/logo.png" />
+    <meta property="og:image:alt" content="CVM AI logo" />
+    <meta property="og:site_name" content="CVM AI" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CVM AI | Dual-PC AI Vision Platform" />
+    <meta
+      name="twitter:description"
+      content="CVM AI brings AI vision support to dual-PC competitive setups, pairing target-tracking workflows with dedicated capture and control hardware."
+    />
+    <meta name="twitter:image" content="https://www.cvmai.uk/logo/logo.png" />
+    <script id="cvm-ai-structured-data" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "CVM AI",
+            "alternateName": ["CVM", "cvm AI", "CVM key"],
+            "url": "https://www.cvmai.uk/",
+            "logo": "https://www.cvmai.uk/logo/logo.png",
+            "sameAs": ["https://discord.gg/6SxKbrdq8C"]
+          },
+          {
+            "@type": "WebSite",
+            "name": "CVM AI",
+            "alternateName": ["CVM", "CVM AI Store"],
+            "url": "https://www.cvmai.uk/",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "CVM AI",
+            "alternateName": "CVM",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Windows 10, Windows 11",
+            "url": "https://www.cvmai.uk/",
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "USD",
+              "lowPrice": "0",
+              "highPrice": "17.49",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        ]
+      }
+    </script>
+    <title>CVM AI | Dual-PC AI Vision Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+    />
+    <script type="module" crossorigin src="/assets/cvm-app-B6dLyArH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C-VU9xy2.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <main>
+        <h1>CVM AI dual-PC AI vision platform</h1>
+        <p>
+          CVM AI is built around dual-PC competitive setups, combining AI vision, target-tracking workflows,
+          hardware setup guidance, tutorials, and account-based license delivery.
+        </p>
+        <p>
+          Important pages: CVM AI buy page, CVM AI hardware guide, CVM AI tutorial, CVM AI EULA, and CVM AI terms of service.
+        </p>
+      </main>
+    </noscript>
+  </body>
+</html>

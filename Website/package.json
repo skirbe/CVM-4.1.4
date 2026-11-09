@@ -1,0 +1,13 @@
+{
+  "name": "cvmai-site-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Original CVMAI frontend with Buy routed to public downloads",
+  "scripts": {
+    "build": "python build.py",
+    "dev": "python serve.py"
+  },
+  "devDependencies": {
+    "acorn": "8.15.0"
+  }
+}

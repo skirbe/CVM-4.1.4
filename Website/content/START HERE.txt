@@ -1,0 +1,33 @@
+CVM AI 4.1.4 — START HERE
+========================
+
+The launcher is already compiled. No build step is required.
+
+DOWNLOAD
+Download .zip.001, .zip.002, .zip.003 and Extract-release.cmd from the
+GitHub Windows release. Keep all four files in the same folder, then run
+Extract-release.cmd. It joins, verifies and extracts the complete package.
+Do not use GitHub's automatic source-code ZIP as the Windows application.
+
+START
+Open the extracted CVM AI 4.1.4 folder and double-click Start CVM.cmd.
+This runs App\CVM AI.exe beside the matched cvm-4.1.4.exe.
+Keep the complete App folder together.
+
+CONFIGURE
+1. Choose the video source. For two-PC network video, match the sender's
+   destination to the CVM PC's LAN IP; match the protocol and port.
+2. Add your own compatible ONNX model or TensorRT engine to App\models,
+   then select its actual file and matching family/input size/classes.
+3. Choose DML for compatible ONNX inference, or TRT for NVIDIA TensorRT.
+4. Set the active profile, activation key and output device/COM/IP details.
+5. Start: check picture, boxes, selected target and output in that order.
+6. Save, stop processing and close. Reopen to confirm the settings remain.
+
+Detector weights are not included. Protected cloud models/keys are not
+provided. Vendor services/reporting are disabled; LAN operation remains.
+
+HELP
+Open USER GUIDE.html for the full offline English manual.
+Guides\Setup.md includes two-PC setup, model formats and prerequisites.
+Source\Launcher includes optional source/build instructions for developers.

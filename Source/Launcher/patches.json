@@ -1,0 +1,284 @@
+{
+  "build": "CVMAI Launcher 1.1.0",
+  "input_sha256": "928468742916dbbfd4f1aebd08fa92d8e90e9db05de9abfe12b78a7863f41bd2",
+  "patches": [
+    {
+      "id": "direct-entry-parent-check",
+      "rva": "0x6daf0d",
+      "before": "e87e90aaff",
+      "after": "b001909090",
+      "reason": "Replace the call that checks the authorized parent name, parent-file hash allowlist and watermark. Its reason string is already initialized empty by the caller.",
+      "native_location": {
+        "verifier_rva": "0x183F90",
+        "caller_rva": "0x6DAD60"
+      }
+    },
+    {
+      "id": "no-launcher-pipe",
+      "rva": "0x6cd172",
+      "before": "0f85ec000000",
+      "after": "e9bd07000090",
+      "reason": "Continue after the launcher-pipe read, seed and MAC checks; no inherited launcher pipe exists in a direct launch.",
+      "native_location": {
+        "startup_function_rva": "0x6CCE90"
+      }
+    },
+    {
+      "id": "do-not-start-account-worker",
+      "rva": "0x121a40",
+      "before": "48895c241855",
+      "after": "31c0c3909090",
+      "reason": "Return false at the authorization-worker start function itself. All callers are prevented from creating the CVA1 worker; startup snapshot construction remains in its caller.",
+      "native_location": {
+        "worker_start_rva": "0x121A40",
+        "startup_call_rva": "0x6CEDEE"
+      }
+    },
+    {
+      "id": "local-config-after-snapshot",
+      "rva": "0x6cee31",
+      "before": "0f857d040000",
+      "after": "e98e05000090",
+      "reason": "After construction of the permission snapshot and return from the initial-accept helper, use the existing configuration load path without starting the account watchdog. Preserve all snapshot initialization and destructors.",
+      "native_location": {
+        "snapshot_constructor_rva": "0x6636F0",
+        "initial_accept_helper_rva": "0x6654A0"
+      }
+    },
+    {
+      "id": "local-runtime-start",
+      "rva": "0x665280",
+      "before": "48895c240848",
+      "after": "b801000000c3",
+      "reason": "Allow the before-processing local runtime check without queueing a verify request to the deliberately inactive account worker.",
+      "native_location": {
+        "function_rva": "0x665280",
+        "authorization_request_rva": "0x121F60"
+      }
+    },
+    {
+      "id": "local-runtime-permit",
+      "rva": "0x141f50",
+      "before": "48895c241056",
+      "after": "b801000000c3",
+      "reason": "The permit accessor otherwise rejects the unpublished remote permit state; its callers consume a Boolean.",
+      "native_location": {
+        "function_rva": "0x141F50",
+        "state_publication_rva": "0x663F60"
+      }
+    },
+    {
+      "id": "no-enforcement-file-deletion",
+      "rva": "0x177670",
+      "before": "48895c242055",
+      "after": "b801000000c3",
+      "reason": "Disable the script builder shared by the exit/enforcement cleanup wrappers. Return success before filesystem/script operations.",
+      "native_location": {
+        "cleanup_script_builder_rva": "0x177670"
+      }
+    },
+    {
+      "id": "local-domain-permission",
+      "rva": "0x141cf0",
+      "before": "48895c240848",
+      "after": "b801000000c3",
+      "reason": "Shared Boolean domain check used by processing, actuators and startup/UI callbacks; local mode does not publish a remote lease.",
+      "native_location": {
+        "function_rva": "0x141CF0"
+      }
+    },
+    {
+      "id": "local-aggregate-permission",
+      "rva": "0x141ea0",
+      "before": "48895c241056",
+      "after": "b801000000c3",
+      "reason": "Boolean aggregate accessor used when publishing permission state; no remote three-domain state is created in local mode.",
+      "native_location": {
+        "function_rva": "0x141EA0",
+        "state_publication_rva": "0x663F60"
+      }
+    },
+    {
+      "id": "local-trt-status",
+      "rva": "0x1eed6c",
+      "before": "0fb605c9d3190190",
+      "after": "b801000000909090",
+      "reason": "TRT status check reads a remote authorization-publication Boolean. Use the local permission result rather than that unpopulated remote flag.",
+      "native_location": {
+        "authorization_flag_rva": "0x138C13C"
+      }
+    },
+    {
+      "id": "local-trt-build-check-1",
+      "rva": "0x1f1a53",
+      "before": "0fb605e2a6190190",
+      "after": "b801000000909090",
+      "reason": "The ONNX/TensorRT builder interprets the same remote flag as cancellation. Preserve the builder while removing that remote-state prerequisite.",
+      "native_location": {
+        "builder_function_rva": "0x1F16F0",
+        "authorization_flag_rva": "0x138C13C"
+      }
+    },
+    {
+      "id": "local-trt-build-check-2",
+      "rva": "0x1f210d",
+      "before": "0fb60528a0190190",
+      "after": "b801000000909090",
+      "reason": "Second remote-state cancellation check in the same ONNX/TensorRT builder.",
+      "native_location": {
+        "builder_function_rva": "0x1F16F0",
+        "authorization_flag_rva": "0x138C13C"
+      }
+    },
+    {
+      "id": "local-ui-auto-start",
+      "rva": "0x321664",
+      "before": "0f85b6000000",
+      "after": "e9b700000090",
+      "reason": "Allow the auto-start handler to continue without the UI account-login Boolean; retain its normal processing-state checks.",
+      "native_location": {
+        "handler_rva": "0x321620"
+      }
+    },
+    {
+      "id": "local-ui-start-load",
+      "rva": "0x320dad",
+      "before": "0f85d1000000",
+      "after": "e9d200000090",
+      "reason": "Allow the start/load handler to continue without the UI account-login Boolean; retain model/configuration validation.",
+      "native_location": {
+        "handler_rva": "0x320D60"
+      }
+    },
+    {
+      "id": "show-local-start-stop",
+      "rva": "0x36d992",
+      "before": "0fb69eb8150000",
+      "after": "b3019090909090",
+      "reason": "Keep Start/Stop visible in the status refresh independently of the UI account-login Boolean.",
+      "native_location": {
+        "status_refresh_rva": "0x36D950"
+      }
+    },
+    {
+      "id": "hide-unused-account-login",
+      "rva": "0x36d9f1",
+      "before": "0f94c3",
+      "after": "30db90",
+      "reason": "Hide the account-login button in that same refresh routine for this local build.",
+      "native_location": {
+        "status_refresh_rva": "0x36D950"
+      }
+    },
+    {
+      "id": "no-vendor-http-app-auth",
+      "rva": "0x15a3fa",
+      "before": "ff1510c38100",
+      "after": "31c090909090",
+      "reason": "Replace this vendor client WinHttpOpen call with a null session result. Preserve URL parsing, initialized outputs, native failure handling and destructors; no Connect/OpenRequest/SendRequest path is entered.",
+      "native_location": {
+        "function_rva": "0x15a370",
+        "user_agent": "CvmApp/1.0",
+        "api": "WinHttpOpen"
+      }
+    },
+    {
+      "id": "no-vendor-http-managed-model",
+      "rva": "0x1620e6",
+      "before": "ff1524468100",
+      "after": "31c090909090",
+      "reason": "Replace this vendor client WinHttpOpen call with a null session result. Preserve URL parsing, initialized outputs, native failure handling and destructors; no Connect/OpenRequest/SendRequest path is entered.",
+      "native_location": {
+        "function_rva": "0x161d10",
+        "user_agent": "CvmAI/managed-model",
+        "api": "WinHttpOpen"
+      }
+    },
+    {
+      "id": "no-vendor-http-selfcheck",
+      "rva": "0x176008",
+      "before": "ff1502078000",
+      "after": "31c090909090",
+      "reason": "Replace this vendor client WinHttpOpen call with a null session result. Preserve URL parsing, initialized outputs, native failure handling and destructors; no Connect/OpenRequest/SendRequest path is entered.",
+      "native_location": {
+        "function_rva": "0x175f60",
+        "user_agent": "cvm-selfcheck/1.0",
+        "api": "WinHttpOpen"
+      }
+    },
+    {
+      "id": "no-vendor-http-binary-trust",
+      "rva": "0x1865f2",
+      "before": "ff1518017f00",
+      "after": "31c090909090",
+      "reason": "Replace this vendor client WinHttpOpen call with a null session result. Preserve URL parsing, initialized outputs, native failure handling and destructors; no Connect/OpenRequest/SendRequest path is entered.",
+      "native_location": {
+        "function_rva": "0x1865a0",
+        "user_agent": "CvmBinaryTrust/1.0",
+        "api": "WinHttpOpen"
+      }
+    },
+    {
+      "id": "no-vendor-http-error-report",
+      "rva": "0x1966d9",
+      "before": "ff1531007e00",
+      "after": "31c090909090",
+      "reason": "Replace this vendor client WinHttpOpen call with a null session result. Preserve URL parsing, initialized outputs, native failure handling and destructors; no Connect/OpenRequest/SendRequest path is entered.",
+      "native_location": {
+        "function_rva": "0x196550",
+        "user_agent": "cvm-errorreport/1.0",
+        "api": "WinHttpOpen"
+      }
+    },
+    {
+      "id": "no-vendor-http-parameters",
+      "rva": "0x19b84c",
+      "before": "ff15beae7d00",
+      "after": "31c090909090",
+      "reason": "Replace this vendor client WinHttpOpen call with a null session result. Preserve URL parsing, initialized outputs, native failure handling and destructors; no Connect/OpenRequest/SendRequest path is entered.",
+      "native_location": {
+        "function_rva": "0x19b150",
+        "user_agent": "cvm-params/1.0",
+        "api": "WinHttpOpen"
+      }
+    },
+    {
+      "id": "no-vendor-http-usage-census",
+      "rva": "0x1a313f",
+      "before": "ff15cb357d00",
+      "after": "31c090909090",
+      "reason": "Replace this vendor client WinHttpOpen call with a null session result. Preserve URL parsing, initialized outputs, native failure handling and destructors; no Connect/OpenRequest/SendRequest path is entered.",
+      "native_location": {
+        "function_rva": "0x1a30f0",
+        "user_agent": "CvmAI/usage-census",
+        "api": "WinHttpOpen"
+      }
+    },
+    {
+      "id": "no-usage-report-dispatch",
+      "rva": "0x1a3430",
+      "before": "48895c24084c",
+      "after": "31c0c3909090",
+      "reason": "Return zero at the usage-report dispatcher before the payload builder, report deduplication state and detached reporting thread are entered.",
+      "native_location": {
+        "dispatcher_rva": "0x1A3430",
+        "payload_builder_rva": "0x1A2740",
+        "transport_rva": "0x1A30F0",
+        "trigger_rva": "0x6C9497"
+      }
+    }
+  ],
+  "preserved": [
+    "Configuration-load error branch",
+    "Capture and detector implementations",
+    "Model validation and protected-model decryption",
+    "Ordinary stop and shutdown",
+    "Original section sizes and layout"
+  ],
+  "preferred_image_base": "0x140000000",
+  "addressing": "RVAs resolved against the actual child image base",
+  "validation": {
+    "report": "validation.json",
+    "status": "sandbox_startup_profiles_and_native_tcp_udp_verified"
+  }
+}

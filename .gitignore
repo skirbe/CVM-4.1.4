@@ -1,0 +1,13 @@
+Website/dist/
+Website/**/__pycache__/
+**/node_modules/
+.env
+.env.*
+App/auth/
+App/crash/
+App/arm_config.*
+App/*.log
+App/*.dat
+*.bndb
+*.dmp
+release-assets/

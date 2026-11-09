@@ -1,0 +1,32 @@
+* text=auto eol=lf
+App/** -text
+Website/source/** -text
+"App/avcodec-62.dll" filter=lfs diff=lfs merge=lfs -text
+"App/avfilter-11.dll" filter=lfs diff=lfs merge=lfs -text
+"App/avformat-62.dll" filter=lfs diff=lfs merge=lfs -text
+"App/cublas64_12.dll" filter=lfs diff=lfs merge=lfs -text
+"App/cublasLt64_12.dll" filter=lfs diff=lfs merge=lfs -text
+"App/cudnn_adv64_9.dll" filter=lfs diff=lfs merge=lfs -text
+"App/cudnn_engines_precompiled64_9.dll" filter=lfs diff=lfs merge=lfs -text
+"App/cudnn_heuristic64_9.dll" filter=lfs diff=lfs merge=lfs -text
+"App/cudnn_ops64_9.dll" filter=lfs diff=lfs merge=lfs -text
+"App/cufft64_11.dll" filter=lfs diff=lfs merge=lfs -text
+"App/custom_plugins.dll" filter=lfs diff=lfs merge=lfs -text
+"App/cvm-4.1.4.exe" filter=lfs diff=lfs merge=lfs -text
+"App/nppif64_12.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nppig64_12.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nppist64_12.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_builder_resource_ptx_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_builder_resource_sm100_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_builder_resource_sm120_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_builder_resource_sm75_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_builder_resource_sm80_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_builder_resource_sm86_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_builder_resource_sm89_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_builder_resource_sm90_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_lean_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvinfer_plugin_10.dll" filter=lfs diff=lfs merge=lfs -text
+"App/nvrtc64_120_0.dll" filter=lfs diff=lfs merge=lfs -text
+"App/opencv_videoio_ffmpeg4100_64.dll" filter=lfs diff=lfs merge=lfs -text
+"App/opencv_world4100.dll" filter=lfs diff=lfs merge=lfs -text

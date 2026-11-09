@@ -1,0 +1,90 @@
+{
+  "checks": [
+    {
+      "name": "Download navigation keeps project prefix",
+      "passed": true
+    },
+    {
+      "name": "Three direct public archive links",
+      "passed": true
+    },
+    {
+      "name": "Helper direct download",
+      "passed": true
+    },
+    {
+      "name": "Guide chapter and hash navigation",
+      "passed": true
+    },
+    {
+      "name": "Direct setup reload",
+      "passed": true
+    },
+    {
+      "name": "Search under project path",
+      "passed": true
+    },
+    {
+      "name": "Guide excludes internal Sandbox text",
+      "passed": true
+    },
+    {
+      "name": "Hardware lazy assets load",
+      "passed": true
+    },
+    {
+      "name": "Home stays in project root",
+      "passed": true
+    },
+    {
+      "name": "Project mobile guide fits viewport",
+      "passed": true
+    },
+    {
+      "name": "Project mobile chapter controls",
+      "passed": true
+    },
+    {
+      "name": "Project mobile chapter opens",
+      "passed": true
+    },
+    {
+      "name": "Project mobile download fits viewport",
+      "passed": true
+    },
+    {
+      "name": "Download guide ZIP uses project path",
+      "passed": true
+    },
+    {
+      "name": "Download guide link uses project path",
+      "passed": true
+    },
+    {
+      "name": "Checklist link uses project path",
+      "passed": true
+    },
+    {
+      "name": "Download-to-guide link works",
+      "passed": true
+    },
+    {
+      "name": "Buy alias opens project downloads",
+      "passed": true
+    },
+    {
+      "name": "Unknown project chapter fallback",
+      "passed": true
+    },
+    {
+      "name": "Project search empty state",
+      "passed": true
+    },
+    {
+      "name": "Project desktop no horizontal overflow",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failed_requests": []
+}

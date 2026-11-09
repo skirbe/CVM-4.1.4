@@ -1,0 +1,28 @@
+{
+  "version": "4.1.4",
+  "downloadUrl": "https://github.com/terrafirma2021/CVMAI/releases/tag/v4.1.4",
+  "fileName": "CVMAI-4.1.4-Windows-x64.zip",
+  "sizeBytes": 4977713877,
+  "sha256": "6fb8a806033f88e670cb0c7eac8aa86d6d2b11c8ca5cef20513e71455466ca01",
+  "status": "published",
+  "runtimeFiles": 17907,
+  "repositoryUrl": "https://github.com/terrafirma2021/CVMAI",
+  "packaging": "split_zip",
+  "parts": [
+    {
+      "file": "CVMAI-4.1.4-Windows-x64.zip.001",
+      "bytes": 1800000000,
+      "sha256": "938aee7ee8fce0ba987395be1ca9f2159f498c0f996bff3a4bedcfe2ff3968d1"
+    },
+    {
+      "file": "CVMAI-4.1.4-Windows-x64.zip.002",
+      "bytes": 1800000000,
+      "sha256": "216c4597bdb0a2ab9d312153ed2c8289428a87dc97c89b9c1e2c1bae62dd408c"
+    },
+    {
+      "file": "CVMAI-4.1.4-Windows-x64.zip.003",
+      "bytes": 1377713877,
+      "sha256": "8f441b6b703a709babec5c8606435c39bea75ee79649b6d47e1889c02f9b95f9"
+    }
+  ]
+}

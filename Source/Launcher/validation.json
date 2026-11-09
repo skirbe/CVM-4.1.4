@@ -1,0 +1,83 @@
+{
+  "launcher_version": "1.1.0.0",
+  "launcher_sha256": "55bd0a49bac8c68583612d4b935739b18426e6be41d8cb94782f1f1787a8cb87",
+  "launcher_bytes": 49152,
+  "target_sha256_unchanged": "928468742916dbbfd4f1aebd08fa92d8e90e9db05de9abfe12b78a7863f41bd2",
+  "memory_patch_count": 24,
+  "tests": [
+    {
+      "name": "idle",
+      "ui_open_seconds": 4.8403542,
+      "save_button_invoked": true,
+      "clean_exit_code": 0,
+      "all_memory_changes_match": true,
+      "native_socket_probes": [
+        {
+          "protocol": "TCP",
+          "passed": true,
+          "startup": 0,
+          "socket": 3264,
+          "connected": 0,
+          "sent": 17,
+          "received": 17,
+          "echo": "CVM-LAN-PROBE-01!",
+          "last_error": 0
+        },
+        {
+          "protocol": "UDP",
+          "passed": true,
+          "startup": 0,
+          "socket": 3280,
+          "connected": 0,
+          "sent": 17,
+          "received": 17,
+          "echo": "CVM-LAN-PROBE-01!",
+          "last_error": 0
+        }
+      ],
+      "external_network_events": 0
+    },
+    {
+      "name": "reopen",
+      "ui_open_seconds": 3.2042953,
+      "save_button_invoked": true,
+      "clean_exit_code": 0,
+      "all_memory_changes_match": true,
+      "native_socket_probes": [
+        {
+          "protocol": "TCP",
+          "passed": true,
+          "startup": 0,
+          "socket": 3228,
+          "connected": 0,
+          "sent": 17,
+          "received": 17,
+          "echo": "CVM-LAN-PROBE-01!",
+          "last_error": 0
+        },
+        {
+          "protocol": "UDP",
+          "passed": true,
+          "startup": 0,
+          "socket": 3244,
+          "connected": 0,
+          "sent": 17,
+          "received": 17,
+          "echo": "CVM-LAN-PROBE-01!",
+          "last_error": 0
+        }
+      ],
+      "external_network_events": 0
+    }
+  ],
+  "missing_and_wrong_version_refused_without_child": true,
+  "normal_exit_sentinels_retained": true,
+  "sandbox_networking_enabled": true,
+  "guest_external_outbound_blocked": true,
+  "guest_external_block_positive_control_passed": true,
+  "host_firewall_or_hosts_modified": false,
+  "desktop_code_executed_on_host": false,
+  "capture_inference_device_output_tested": false,
+  "entry_point": "App/CVM AI.exe",
+  "scope": "Native TCP/UDP loopback probes run inside the patched CVM process; this does not validate physical devices or a full two-PC capture pipeline."
+}

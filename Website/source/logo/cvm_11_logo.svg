@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="803" height="803" viewBox="0 0 803 803" role="img" aria-labelledby="title desc">
+  <title id="title">CVM logo</title>
+  <desc id="desc">Purple-to-orange CVM wordmark beneath a split circular targeting mark, on a transparent background.</desc>
+  <defs>
+    <linearGradient id="spectrum" x1="100" y1="0" x2="760" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8f3df3"/>
+      <stop offset=".24" stop-color="#963cf0"/>
+      <stop offset=".36" stop-color="#ae41d7"/>
+      <stop offset=".485" stop-color="#d74899"/>
+      <stop offset=".605" stop-color="#f65a54"/>
+      <stop offset=".69" stop-color="#ff7816"/>
+      <stop offset=".84" stop-color="#ff880a"/>
+      <stop offset="1" stop-color="#ff8908"/>
+    </linearGradient>
+    <linearGradient id="core" x1="400" y1="0" x2="455" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f95755"/>
+      <stop offset="1" stop-color="#ff8114"/>
+    </linearGradient>
+    <linearGradient id="crosshair" x1="330" y1="0" x2="522" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d747a0"/>
+      <stop offset=".5" stop-color="#fa5b50"/>
+      <stop offset="1" stop-color="#ff8510"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Split outer sight and its two leftward speed strokes. -->
+  <g fill="url(#spectrum)">
+    <path d="M 136 316 L 159 294 L 267 294 C 275 218 334 167 418 159 L 418 199 C 358 203 319 248 308 316 Z"/>
+    <path d="M 438 159 C 492 163 536 190 564 231 L 531 253 C 510 223 480 204 438 199 Z"/>
+    <path d="M 101 350 L 121 330 L 310 330 C 323 382 361 418 418 426 L 418 467 C 346 463 290 418 273 350 Z"/>
+    <path d="M 437 426 C 477 422 510 399 531 365 L 564 388 C 538 433 493 460 437 467 Z"/>
+
+    <!-- C -->
+    <path d="M 230 628 H 112 C 97 628 91 617 92 598 L 115 529 C 119 522 127 517 137 517 H 257 L 272 543 H 148 C 146 543 144 547 143 550 L 131 591 C 130 596 131 598 135 598 H 263 Z"/>
+    <!-- V -->
+    <path d="M 271 517 H 324 L 363 593 L 438 517 H 475 L 369 628 H 339 C 334 628 330 625 328 622 Z"/>
+    <!-- M -->
+    <path d="M 440 627 L 473 532 Q 477 520 484 517 H 521 L 555 569 L 623 517 H 660 L 622 628 H 590 L 613 556 L 540 611 L 501 552 L 478 627 Z"/>
+    <!-- Three fast horizontal bars completing the wordmark. -->
+    <path d="M 676 517 H 762 L 746 530 H 672 Z"/>
+    <path d="M 667 541 H 733 L 717 554 H 662 Z"/>
+    <path d="M 657 565 H 703 L 689 577 H 653 Z"/>
+  </g>
+
+  <!-- Center point and four separate, rounded crosshair ticks. -->
+  <circle cx="427.5" cy="311.5" r="26.8" fill="url(#core)"/>
+  <g fill="url(#crosshair)">
+    <rect x="422" y="218" width="11" height="49" rx="5.5"/>
+    <rect x="422" y="358" width="11" height="49" rx="5.5"/>
+    <rect x="332" y="308" width="51" height="11" rx="5.5"/>
+    <rect x="471" y="308" width="50" height="11" rx="5.5"/>
+  </g>
+</svg>
